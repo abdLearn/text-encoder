@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/logo.png" >
+        </div>
+    </header>
+    <main class="container">
+        <div class="container-box">
+            <section>
+                    <textarea placeholder="Ingrese un texto" cols="70" rows="10" id="message-content"></textarea>
+                    <p class="indications"><img src="img/advertencia.png"> Solo letras minúsculas y sin acentos</p>
+                    <div class="buttons">
+                        <div><button class="encriptar" id="encriptar">Encriptar</button></div>
+                        <div><button class="desencriptar" id="desencriptar">Desencriptar</button></div>
+                    </div>
+            </section>
+        </div>
+        
+        <div  class="rectangle"> 
+            <section>
+                <div class="doll-show" id="doll-show">
+                    <div class="doll" >
+                        <img src="img/Muñeco.png" alt="Imagen de Vacio" id="background-doll">
+                    </div>
+                    <p class="message-doll-1">Ningún mensaje fue encontrado</p>
+                    <p class="message-doll-2">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div class="message-displayed" id="message-displayed">
+                    <p class="descifrar" id="descifrado">...</p>
+                    <button class="copiar" id="copiar-texto">copiar</button>
+                </div>
+                    
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>© By Adbiel Valdivia Andres 2023</p>
+        </div>
+    </footer>
+</body>
+<script src="funciones.js"></script>
+</html>
